@@ -26,4 +26,6 @@ for file in files:
     shutil.move("%s%s/%s" % (path,original_files, file), 
                 "%s%s" % (path, first_letter))
 
+os.rmdir("%s%s" % (path,original_files))
+
 
